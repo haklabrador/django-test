@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta http-equiv="refresh" content="5">
+</head>
+<body>
+    <TABLE  BORDER="5"; WIDTH=50%%>
+    <TR>
+        <TH COLSPAN="3">
+            <H3><BR>Podatci s burza</H3>
+        </TH>
+    </TR>
+        <TH>Date</TH>
+        <TH>Symbol</TH>
+        <TH>Price</TH>
+    <TR>
+
+    {% for price in prices %}
+    <tr>
+        <td>{{ price.0 }}</td>
+        <td>{{ price.1 }}</td>
+        <td>{{ price.2 }}</td>
+    </tr>
+    {% endfor %}
+
+    </TR>
+</TABLE>
+</body>
+</html>
