@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^polls/', include('polls.urls')),
 
     url(r'^table$', views.table, name='table'),
+    url(r'^graph$', views.graph, name='graph'),
 ]
